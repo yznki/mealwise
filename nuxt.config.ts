@@ -3,6 +3,13 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
 	modules: ["@nuxt/eslint", "@nuxt/ui", "@nuxt/image", "@nuxt/fonts", "@pinia/nuxt", "@vueuse/nuxt", "nuxt-lucide-icons"],
 
+	app: {
+		head: {
+			viewport: "width=device-width, initial-scale=1, viewport-fit=cover",
+			link: [{ rel: "icon", type: "image/svg+xml", href: "/logo.svg" }]
+		}
+	},
+
 	vite: {
 		plugins: [tailwindcss()]
 	},
@@ -25,10 +32,7 @@ export default defineNuxtConfig({
 
 	eslint: {
 		config: {
-			stylistic: {
-				commaDangle: "never",
-				braceStyle: "1tbs"
-			}
+			stylistic: false
 		}
 	}
 });

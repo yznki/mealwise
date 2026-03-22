@@ -106,3 +106,17 @@ Build only these five features — nothing else:
 - **Formatter**: Prettier with tabs (width 2), no trailing commas, double quotes, 140 char print width
 - **Linter**: `@nuxt/eslint` with stylistic rules (comma-dangle: never, brace-style: 1tbs)
 - Run both before committing; CI enforces them
+
+## Deployment
+
+- Platform: Vercel
+- Build command: pnpm build
+- Output directory: .output/public
+- Environment variable required: ANTHROPIC_API_KEY
+
+## Phase status
+
+- Phase 1 — Backend ✅
+- Phase 2 — Input screen ✅
+- Phase 3 — Output screens ✅
+- Phase 4 — Polish & Deploy ✅

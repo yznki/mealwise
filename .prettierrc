@@ -10,5 +10,6 @@
 	"arrowParens": "always",
 	"proseWrap": "preserve",
 	"endOfLine": "lf",
-	"quoteProps": "as-needed"
+	"quoteProps": "as-needed",
+	"vueIndentScriptAndStyle": true
 }

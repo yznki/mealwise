@@ -33,11 +33,61 @@
 	--color-neutral-950: #030712;
 
 	/* ── Accent orange (CTAs, highlights) ───────────────── */
+	--color-orange-50: #fff7ed;
 	--color-orange-400: #fb923c;
 	--color-orange-500: #f97316;
 	--color-orange-600: #ea6c0a;
 
+	/* ── Semantic error colours ─────────────────────────── */
+	--color-red-100: #fee2e2;
+	--color-red-500: #ef4444;
+
 	/* ── Semantic surface colours ───────────────────────── */
 	--color-surface: #f9fafb;
 	--color-surface-brand: #e6f7f2;
+}
+
+/* ── Safe area insets ───────────────────────────────── */
+:root {
+	--safe-area-top: env(safe-area-inset-top, 0px);
+	--safe-area-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* ── Page transitions ───────────────────────────────── */
+.page-enter-active,
+.page-leave-active {
+	transition: opacity 200ms ease, transform 200ms ease;
+}
+.page-enter-from {
+	opacity: 0;
+	transform: translateY(12px);
+}
+.page-leave-to {
+	opacity: 0;
+	transform: translateY(-12px);
+}
+
+/* ── Mobile browser fixes ───────────────────────────── */
+
+/* Prevent double-tap zoom on interactive elements */
+button,
+[role="button"] {
+	touch-action: manipulation;
+}
+
+/* Prevent text size adjustment on orientation change */
+html {
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+/* Momentum scrolling on iOS for overflow containers */
+.scroll-smooth-mobile {
+	-webkit-overflow-scrolling: touch;
+}
+
+/* Hide number input spinners on iOS/WebKit */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	display: none;
 }
