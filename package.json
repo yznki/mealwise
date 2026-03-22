@@ -19,6 +19,8 @@
 		"@nuxt/ui": "^4.5.1",
 		"@pinia/nuxt": "0.11.3",
 		"@tailwindcss/vite": "^4.2.2",
+		"@vercel/analytics": "^2.0.1",
+		"@vercel/speed-insights": "^2.0.0",
 		"@vueuse/nuxt": "14.2.1",
 		"nuxt": "^4.4.2",
 		"nuxt-lucide-icons": "2.0.0",
