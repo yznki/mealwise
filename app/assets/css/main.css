@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+	/* ── Fonts ─────────────────────────────────────────── */
+	--font-sans: "Inter", sans-serif;
+	--font-display: "DM Sans", sans-serif;
+
+	/* ── Brand — Primary green ──────────────────────────── */
+	--color-primary-50: #e6f7f2;
+	--color-primary-100: #c2ebe0;
+	--color-primary-200: #8dd9c4;
+	--color-primary-300: #52c4a6;
+	--color-primary-400: #27b08c;
+	--color-primary-500: #16a37f;
+	--color-primary-600: #0d8a6a;
+	--color-primary-700: #0d6e56;
+	--color-primary-800: #0a5443;
+	--color-primary-900: #083d31;
+	--color-primary-950: #042219;
+
+	/* ── Neutral — Slate grey ───────────────────────────── */
+	--color-neutral-50: #f9fafb;
+	--color-neutral-100: #f3f4f6;
+	--color-neutral-200: #e5e7eb;
+	--color-neutral-300: #d1d5db;
+	--color-neutral-400: #9ca3af;
+	--color-neutral-500: #6b7280;
+	--color-neutral-600: #4b5563;
+	--color-neutral-700: #374151;
+	--color-neutral-800: #1f2937;
+	--color-neutral-900: #111827;
+	--color-neutral-950: #030712;
+
+	/* ── Accent orange (CTAs, highlights) ───────────────── */
+	--color-orange-400: #fb923c;
+	--color-orange-500: #f97316;
+	--color-orange-600: #ea6c0a;
+
+	/* ── Semantic surface colours ───────────────────────── */
+	--color-surface: #f9fafb;
+	--color-surface-brand: #e6f7f2;
+}
