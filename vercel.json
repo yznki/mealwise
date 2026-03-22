@@ -1,4 +1,3 @@
 {
-  "buildCommand": "pnpm build",
-  "framework": "nuxt"
+  "buildCommand": "pnpm build"
 }
