@@ -53,7 +53,7 @@
 				{{ meal.foodEmoji }}
 			</div>
 			<!-- Meal name -->
-			<p class="text-[13px] font-medium text-neutral-900 dark:text-white leading-snug line-clamp-2 min-w-0 text-left">{{ meal.name }}</p>
+			<p class="text-[13px] font-medium text-neutral-900 dark:text-neutral-100 leading-snug line-clamp-2 min-w-0 text-left">{{ meal.name }}</p>
 		</div>
 		<!-- Right: recipe link indicator -->
 		<div class="shrink-0 w-7 h-7 rounded-full bg-neutral-50 dark:bg-neutral-800 flex items-center justify-center text-neutral-400">

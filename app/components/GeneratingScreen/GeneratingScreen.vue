@@ -18,14 +18,14 @@
 
 	function stepLabelClass(index: number): string {
 		if (index < currentStep.value) return "text-neutral-400";
-		if (index === currentStep.value) return "text-neutral-900 dark:text-white font-medium";
+		if (index === currentStep.value) return "text-neutral-900 dark:text-neutral-100 font-medium";
 		return "text-neutral-300 dark:text-neutral-600";
 	}
 </script>
 <template>
 	<div class="flex flex-col h-dvh bg-white dark:bg-neutral-900">
 		<!-- App header -->
-		<div class="px-6 pt-12 pb-6">
+		<div class="px-6 pt-4 pb-3">
 			<UITheLogo />
 			<p class="text-sm text-neutral-500 mt-1">Plan your week in 60 seconds.</p>
 		</div>
@@ -44,7 +44,7 @@
 
 			<!-- Headline + subtext -->
 			<div class="flex flex-col items-center gap-2">
-				<p class="font-display font-bold text-[22px] text-neutral-900 dark:text-white text-center">Building your plan…</p>
+				<p class="font-display font-bold text-[22px] text-neutral-900 dark:text-neutral-100 text-center">Building your plan…</p>
 				<p class="text-sm text-neutral-500 text-center max-w-65">Finding meals that fit your budget and dietary preference.</p>
 			</div>
 
@@ -63,9 +63,15 @@
 			</div>
 
 			<!-- Timeout fallback — shown if API hasn't responded after 30 seconds -->
-			<Transition enter-active-class="transition-opacity duration-300" enter-from-class="opacity-0" leave-active-class="transition-opacity duration-300" leave-to-class="opacity-0">
+			<Transition
+				enter-active-class="transition-opacity duration-300"
+				enter-from-class="opacity-0"
+				leave-active-class="transition-opacity duration-300"
+				leave-to-class="opacity-0">
 				<div v-if="timedOut" class="w-full max-w-85.5 bg-red-100 dark:bg-red-900/20 rounded-xl px-4 py-3 flex flex-col gap-1">
-					<p class="text-sm font-medium text-neutral-900 dark:text-neutral-100">This is taking longer than usual. Please wait or go back and try again.</p>
+					<p class="text-sm font-medium text-neutral-900 dark:text-neutral-100">
+						This is taking longer than usual. Please wait or go back and try again.
+					</p>
 					<button class="text-sm font-medium text-primary-500 text-left mt-1" @click="emit('edit')">← Go Back</button>
 				</div>
 			</Transition>

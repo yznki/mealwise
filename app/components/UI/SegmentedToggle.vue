@@ -37,7 +37,7 @@
 			v-for="option in options"
 			:key="option.value"
 			class="relative z-10 flex-1 min-w-0 py-2 text-center text-sm cursor-pointer rounded-[10px] transition-colors duration-200"
-			:class="option.value === value ? 'text-neutral-900 dark:text-white font-medium' : 'text-neutral-400'"
+			:class="option.value === value ? 'text-neutral-900 dark:text-neutral-100 font-medium' : 'text-neutral-400'"
 			@click="value = option.value">
 			{{ option.label }}
 		</button>

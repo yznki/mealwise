@@ -10,8 +10,8 @@
 		<!-- Summary bar -->
 		<div class="flex items-center justify-between px-5 py-3 bg-white dark:bg-neutral-900">
 			<p class="text-sm text-neutral-500">
-				<span class="font-medium text-neutral-900 dark:text-white">{{ totalItems }}</span> items ·
-				<span class="font-medium text-neutral-900 dark:text-white">{{ categories.length }}</span> categories
+				<span class="font-medium text-neutral-900 dark:text-neutral-100">{{ totalItems }}</span> items ·
+				<span class="font-medium text-neutral-900 dark:text-neutral-100">{{ categories.length }}</span> categories
 			</p>
 			<p class="font-display font-bold text-sm text-primary-500">Est. {{ store.mealPlanResponse?.estimatedTotalCost }}</p>
 		</div>

@@ -16,7 +16,7 @@
 		<div class="bg-white dark:bg-neutral-900 px-5 pt-5 pb-3 flex flex-col gap-3 border-b border-neutral-100 dark:border-neutral-800">
 			<!-- Title row -->
 			<div class="flex items-center justify-between">
-				<p class="font-display font-bold text-2xl text-neutral-900 dark:text-white">Your Week</p>
+				<p class="font-display font-bold text-2xl text-neutral-900 dark:text-neutral-100">Your Week</p>
 				<div class="flex items-center gap-2">
 					<div class="bg-surface-brand rounded-full px-3 py-1.5">
 						<span class="text-xs font-semibold text-primary-500 dark:text-primary-300">{{ store.mealPlanResponse?.estimatedTotalCost }}</span>

@@ -38,7 +38,7 @@
 				<span class="font-display font-black text-[36px] text-red-500 leading-none">!</span>
 			</div>
 			<!-- Headline -->
-			<p class="font-display font-bold text-2xl text-neutral-900 dark:text-white text-center mt-4">Something went wrong.</p>
+			<p class="font-display font-bold text-2xl text-neutral-900 dark:text-neutral-100 text-center mt-4">Something went wrong.</p>
 			<!-- Subtext -->
 			<p class="text-sm text-neutral-500 text-center max-w-70">
 				We couldn't generate your plan. This is usually a connection issue — not your inputs.

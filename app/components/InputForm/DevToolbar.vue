@@ -21,6 +21,7 @@
 		navigateTo("/plan");
 	}
 </script>
+
 <template>
 	<div class="shrink-0 flex items-center gap-2 px-3 py-2 bg-neutral-900 border-b border-neutral-700">
 		<span class="text-[10px] font-bold text-neutral-500 uppercase tracking-widest shrink-0">Dev</span>

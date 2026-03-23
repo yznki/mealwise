@@ -51,7 +51,7 @@
 						class="w-full px-6 py-3 flex items-center gap-3 active:bg-neutral-100 dark:active:bg-neutral-800 cursor-pointer hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors"
 						@click="onSelect(currency.code)">
 						<span class="text-xl">{{ currency.flag }}</span>
-						<span class="flex-1 text-sm text-neutral-900 dark:text-white text-left">{{ currency.name }}</span>
+						<span class="flex-1 text-sm text-neutral-900 dark:text-neutral-100 text-left">{{ currency.name }}</span>
 						<span class="text-sm text-neutral-400 dark:text-neutral-500">{{ currency.code }} · {{ currency.symbol }}</span>
 						<span v-if="currency.code === selectedCode" class="text-primary-500 ml-1">
 							<UIcon name="i-lucide-check" class="w-4 h-4" />

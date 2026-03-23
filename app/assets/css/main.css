@@ -47,12 +47,20 @@
 	--color-surface-brand: #e6f7f2;
 }
 
-/* ── Semantic surface colours (dark mode) ───────────── */
+/* ── Dark mode overrides ────────────────────────────── */
 /* Scoped to .dark class (set by @nuxtjs/color-mode), NOT a media query,
-   so the app's explicit light/dark/system toggle always wins. */
+   so the app's explicit light/dark/system toggle always wins.
+   Neutral overrides replace the default blue-tinted grays with
+   warm neutrals (R ≥ G ≥ B) so dark mode feels cozy, not cold. */
 .dark {
-	--color-surface: #111827;
+	--color-surface: #121212;
 	--color-surface-brand: #0d3d30;
+
+	--color-neutral-100: #e8e8e8;
+	--color-neutral-700: #242424;
+	--color-neutral-800: #1e1e1e;
+	--color-neutral-900: #121212;
+	--color-neutral-950: #0f0f0f;
 }
 
 /* ── Safe area insets ───────────────────────────────── */

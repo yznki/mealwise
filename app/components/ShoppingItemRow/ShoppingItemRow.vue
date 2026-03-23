@@ -21,7 +21,7 @@
 				:class="checked ? 'bg-primary-500 border-primary-500' : 'bg-white dark:bg-neutral-900 border-primary-500'">
 				<UIcon v-if="checked" name="i-lucide-check" class="w-3.5 h-3.5 text-white" />
 			</div>
-			<p class="text-sm text-left truncate transition-colors" :class="checked ? 'text-neutral-400 line-through' : 'text-neutral-900 dark:text-white'">
+			<p class="text-sm text-left truncate transition-colors" :class="checked ? 'text-neutral-400 line-through' : 'text-neutral-900 dark:text-neutral-100'">
 				{{ item.name }}
 			</p>
 		</div>
