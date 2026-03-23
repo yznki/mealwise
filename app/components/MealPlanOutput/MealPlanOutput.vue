@@ -11,24 +11,25 @@
 	const { store, activeTab, TAB_OPTIONS, onRegenerate } = useMealPlanOutput();
 </script>
 <template>
-	<div class="flex flex-col h-dvh bg-neutral-50">
+	<div class="flex flex-col h-dvh bg-neutral-50 dark:bg-neutral-950">
 		<!-- Sticky header -->
-		<div class="bg-white px-5 pt-5 pb-3 flex flex-col gap-3 border-b border-neutral-100">
+		<div class="bg-white dark:bg-neutral-900 px-5 pt-5 pb-3 flex flex-col gap-3 border-b border-neutral-100 dark:border-neutral-800">
 			<!-- Title row -->
 			<div class="flex items-center justify-between">
-				<p class="font-display font-bold text-2xl text-neutral-900">Your Week</p>
+				<p class="font-display font-bold text-2xl text-neutral-900 dark:text-white">Your Week</p>
 				<div class="flex items-center gap-2">
 					<div class="bg-surface-brand rounded-full px-3 py-1.5">
-						<span class="text-xs font-semibold text-primary-500">{{ store.mealPlanResponse?.estimatedTotalCost }}</span>
+						<span class="text-xs font-semibold text-primary-500 dark:text-primary-300">{{ store.mealPlanResponse?.estimatedTotalCost }}</span>
 					</div>
+					<UIColorModeToggle />
 					<button
-						class="w-7 h-7 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-500 hover:bg-neutral-200 transition-colors"
+						class="w-7 h-7 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-neutral-500 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors"
 						:class="store.isGenerating ? 'opacity-50 pointer-events-none' : ''"
 						@click="onRegenerate">
 						<UIcon name="i-lucide-refresh-cw" class="w-3.5 h-3.5" :class="store.isGenerating ? 'animate-spin' : ''" />
 					</button>
 					<button
-						class="w-7 h-7 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-500 hover:bg-neutral-200 transition-colors"
+						class="w-7 h-7 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-neutral-500 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors"
 						@click="emit('reset')">
 						<UIcon name="i-lucide-x" class="w-3.5 h-3.5" />
 					</button>

@@ -10,10 +10,12 @@
 
 	defineProps<MealRowProps>();
 
+	// Pill bg/text — breakfast: neutral, lunch: brand green, dinner: orange
+	// dark: hue-tinted backgrounds preserved via opacity modifiers
 	const PILL_CLASSES: Record<string, string> = {
-		breakfast: "bg-neutral-100 text-neutral-500",
-		lunch: "bg-surface-brand text-primary-500",
-		dinner: "bg-orange-50 text-orange-500"
+		breakfast: "bg-neutral-100 dark:bg-neutral-800 text-neutral-500 dark:text-neutral-400",
+		lunch: "bg-surface-brand text-primary-500 dark:text-primary-300",
+		dinner: "bg-orange-50 dark:bg-orange-500/15 text-orange-500"
 	};
 
 	const PILL_LABELS: Record<string, string> = {
@@ -22,10 +24,12 @@
 		dinner: "D"
 	};
 
+	// Emoji circle bg — breakfast: green, lunch: orange, dinner: neutral
+	// bg-surface-brand auto-remaps to dark teal via @theme dark
 	const EMOJI_BG_CLASSES: Record<string, string> = {
 		breakfast: "bg-surface-brand",
-		lunch: "bg-orange-50",
-		dinner: "bg-neutral-100"
+		lunch: "bg-orange-50 dark:bg-orange-500/15",
+		dinner: "bg-neutral-100 dark:bg-neutral-800"
 	};
 
 	function openRecipe(name: string) {
@@ -34,7 +38,7 @@
 </script>
 <template>
 	<button
-		class="w-full flex items-center justify-between px-4 py-3 gap-3 active:bg-neutral-50 transition-colors"
+		class="w-full flex items-center justify-between px-4 py-3 gap-3 active:bg-neutral-50 dark:active:bg-neutral-800 transition-colors"
 		@click="openRecipe(meal.name)">
 		<!-- Left: pill + emoji + name -->
 		<div class="flex items-center gap-2.5 min-w-0">
@@ -49,10 +53,10 @@
 				{{ meal.foodEmoji }}
 			</div>
 			<!-- Meal name -->
-			<p class="text-[13px] font-medium text-neutral-900 leading-snug line-clamp-2 min-w-0 text-left">{{ meal.name }}</p>
+			<p class="text-[13px] font-medium text-neutral-900 dark:text-white leading-snug line-clamp-2 min-w-0 text-left">{{ meal.name }}</p>
 		</div>
 		<!-- Right: recipe link indicator -->
-		<div class="shrink-0 w-7 h-7 rounded-full bg-neutral-50 flex items-center justify-center text-neutral-400">
+		<div class="shrink-0 w-7 h-7 rounded-full bg-neutral-50 dark:bg-neutral-800 flex items-center justify-center text-neutral-400">
 			<UIcon name="i-lucide-arrow-up-right" class="w-3.5 h-3.5" />
 		</div>
 	</button>

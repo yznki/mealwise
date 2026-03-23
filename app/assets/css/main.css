@@ -42,9 +42,17 @@
 	--color-red-100: #fee2e2;
 	--color-red-500: #ef4444;
 
-	/* ── Semantic surface colours ───────────────────────── */
+	/* ── Semantic surface colours (light mode) ──────────── */
 	--color-surface: #f9fafb;
 	--color-surface-brand: #e6f7f2;
+}
+
+/* ── Semantic surface colours (dark mode) ───────────── */
+/* Scoped to .dark class (set by @nuxtjs/color-mode), NOT a media query,
+   so the app's explicit light/dark/system toggle always wins. */
+.dark {
+	--color-surface: #111827;
+	--color-surface-brand: #0d3d30;
 }
 
 /* ── Safe area insets ───────────────────────────────── */

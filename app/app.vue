@@ -8,7 +8,7 @@
 </script>
 <template>
 	<UApp>
-		<div class="min-h-dvh pt-[var(--safe-area-top)] pb-[var(--safe-area-bottom)]">
+		<div class="min-h-dvh bg-white dark:bg-neutral-900 pt-(--safe-area-top) pb-(--safe-area-bottom)">
 			<NuxtPage :transition="{ name: 'page', mode: 'out-in' }" />
 		</div>
 	</UApp>

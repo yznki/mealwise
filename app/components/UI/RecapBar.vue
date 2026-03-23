@@ -22,8 +22,8 @@
 </script>
 <template>
 	<div class="flex items-center justify-between px-6 py-3 bg-surface-brand">
-		<p class="text-sm font-medium text-primary-700 truncate pr-3">{{ recapText }}</p>
-		<button class="shrink-0 text-xs font-semibold text-primary-500 bg-white rounded-full px-3 py-1" @click="emit('edit')">
+		<p class="text-sm font-medium text-primary-700 dark:text-primary-300 truncate pr-3">{{ recapText }}</p>
+		<button class="shrink-0 text-xs font-semibold text-primary-500 dark:text-primary-300 bg-white dark:bg-neutral-800 rounded-full px-3 py-1" @click="emit('edit')">
 			Edit
 		</button>
 	</div>

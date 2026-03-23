@@ -17,7 +17,7 @@
 	}
 </script>
 <template>
-	<div class="flex flex-col h-dvh bg-white">
+	<div class="flex flex-col h-dvh bg-white dark:bg-neutral-900">
 		<!-- App header -->
 		<div class="px-6 pt-12 pb-6">
 			<UITheLogo />
@@ -34,11 +34,11 @@
 		<!-- Error content -->
 		<div class="flex-1 flex flex-col items-center px-6 pt-20 gap-4">
 			<!-- Error icon -->
-			<div class="w-20 h-20 rounded-full bg-red-100 flex items-center justify-center shadow-[0_0_24px_rgba(239,68,68,0.2)]">
+			<div class="w-20 h-20 rounded-full bg-red-100 dark:bg-red-900/20 flex items-center justify-center shadow-[0_0_24px_rgba(239,68,68,0.2)]">
 				<span class="font-display font-black text-[36px] text-red-500 leading-none">!</span>
 			</div>
 			<!-- Headline -->
-			<p class="font-display font-bold text-2xl text-neutral-900 text-center mt-4">Something went wrong.</p>
+			<p class="font-display font-bold text-2xl text-neutral-900 dark:text-white text-center mt-4">Something went wrong.</p>
 			<!-- Subtext -->
 			<p class="text-sm text-neutral-500 text-center max-w-70">
 				We couldn't generate your plan. This is usually a connection issue — not your inputs.
